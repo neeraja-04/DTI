@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+img{
+    width:25%;
+    height: 25%;
+}
+.title{
+    font-size: 50px;
+    font-family:sans-serif;
+    color: rgb(115, 4, 143);
+}
+.caption{
+    color: orange;
+    font-weight: lighter;
+    padding-bottom: 40px;
+}
+.Login{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+h6{
+    color: gray;
+}
+img{
+    width: 10%;
+    height: auto;
+}
+.LoginOptions{
+    width: 60%;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    font-size: medium;
+    margin-bottom: 2%;
+}
