@@ -17,6 +17,8 @@ img{
 .Login{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: xx-large;
+    margin-bottom:0px;
+    border-bottom:0px
 }
 h6{
     color: gray;
