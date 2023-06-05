@@ -1,8 +1,9 @@
 .index{
     text-align: center;
 }
-img{
-    width: fit-content;
+#logo{
+    width: 20%;
+    height: auto;
 }
 .title{
     font-size: 50px;
