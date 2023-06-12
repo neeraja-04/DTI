@@ -42,3 +42,68 @@ img{
 label{
     display: block;
 }
+.resource {
+    /* width: 60%;
+    height: 40px; */
+    border-radius: 50px;
+    padding: 4px 20px 4px 20px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: blueviolet;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.resource .spanres {
+    
+    position: relative;
+    z-index: 2;
+}
+
+.resource:after {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blueviolet;
+    transition: all .35s;
+}
+
+.resource:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.resource:hover:after {
+    width: 100%;
+}
+.box
+{
+    border-radius: 10px;
+    border-color: #0C134F;
+    border-style: groove;
+    display: inline;
+    position: absolute;
+    left: 40%;
+    padding: 2%;
+}
+.otp {
+	background-color: #0C134F;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.otp:hover {
+  background-color: #555;
+  font-size:15px;
+}

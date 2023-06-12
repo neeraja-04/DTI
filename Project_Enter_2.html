@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Project.css">
+    <style>
+        .form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body style="text-align:center;">
+
     <h1 class="title">OTP LOGIN</h1>
-    <form action="Victim_details.html">
-        <label for="name">NAME</label>
-        <input type="text" class="details" id="name" name="name">
-        <label for="mobilemail">MOBILE NUMBER OR EMAIL ID</label>
-        <input type="text" class="details" id="mobilemail" name="mobilemail">
-        <label for="otp">OTP</label>
-        <input type="password" class="details" id="otp" name="otp">
-        <button type="submit" class="LoginOptions" id="LogIn" name="LogIn">LOGIN</button>
-    </form>
+    <div class="box">
+        <form ] class="form">
+            <label for="name">NAME</label><br>
+            <input type="text" class="details" id="name" name="name"><br>
+            <label for="mobilemail">MOBILE NUMBER OR EMAIL ID</label><br>
+            <input type="text" class="details" id="mobilemail" name="mobilemail"><br>
+            <button class="otp" onclick="alert('you will get an otp');">GET OTP</button>
+            <br>
+            <br>
+            <label for="otp">OTP</label>
+            <input type="password" class="details" id="otp" name="otp"><br>
+            <button type="submit"  class="resource" formaction="Victim_details_3.html" id="LogIn" name="LogIn"><span class="spanres">LOGIN</span></button>
+        </form>
+    </div>
 </body>
+
 </html>
