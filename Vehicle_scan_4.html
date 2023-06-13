@@ -1,25 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Project.css">
+    <script src="script.js"></script>
     <style>
-        .head{
-            font-size: x-large;
-            padding: 30px;
-        }
-        .box{
-            padding: 10px 15px 10px 15px;
-            margin: 50px;
+        label {
             display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .head {
+            margin-top: 4rem;
+        }
+
+        .box {
+            margin-top: 3rem;
+            background-color: beige;
+            border-radius: 10px;
+            border-color: #0C134F;
+            border-style: groove;
+            display: inline;
+            position: absolute;
+            left: 40%;
+            padding: 2%;
+            height: 60%;
+            justify-content: center;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .call {
+            display: none;
+        }
+        .anime{
+            animation: mymove 0.5s infinite;
+        }
+
+        @keyframes mymove {
+            0% {
+                opacity: 100%;
+                font-size: 15px;
+            }
+
+            50% {
+                opacity: 50%;
+                font-size: 17px;
+                margin-bottom: 0;
+            }
+
+            100% {
+                opacity: 100%;
+                font-size: 15px;
+                
+            }
+        }
+
+        .resource {
+            border-radius: 50px;
+            padding: 4px 20px 4px 20px;
+            line-height: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: blueviolet;
+            border: 2px solid black;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+        }
+
+        .resource .spanres {
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .resource:after {
+            border-radius: 50px;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: blueviolet;
+            transition: all .35s;
+        }
+
+        .resource:hover {
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .resource:hover:after {
+            width: 100%;
+        }
+        .resource1 {
+            border-radius: 50px;
+            padding: 4px 20px 4px 20px;
+            line-height: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: red;
+            border: 2px solid black;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+        }
+
+        .resource1 .spanres {
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .resource1:after {
+            border-radius: 50px;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: red;
+            transition: all .35s;
+        }
+
+        .resource1:hover {
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .resource1:hover:after {
+            width: 100%;
+        }
+        .desc
+        {
+            font-weight: 10px;
         }
     </style>
     <title>Scan Vehicle number</title>
 </head>
-<body class="index">
-    <label for="Vehicle" class="head">ENTER VEHICLE NUMBER</label>
-    <input type="text" class="box" name="Vehicle">
-    <button type="submit" id="proceed" class="LoginOptions" name="proceed">PROCEED</button>
+
+<body>
+    <div class="box">
+        <label for="Vehicle" class="head">ENTER VEHICLE NUMBER</label>
+        <br>
+        <br>
+        <input type="text" class="input" id="Vehicle">
+        <br>
+        <br>
+        <br>
+        
+        <button id="proceed" class="resource" name="proceed" onclick="showCallDiv()"><span class="spanres">PROCEED</span></button>
+        <br>
+        <br>
+        <div id="call" hidden>
+            <div class="desc"><h4><pre>THE VICTIM'S NAME IS</pre><pre class="name"></pre><Pre>CLICK THIS BUTTON TO CALL NOW</Pre></h4></div>
+            <button onclick="hideCallDiv(0)" class="resource1 anime" id="callnow"><span class="spanres">CALL NOW</span></button>
+        </div>
+    </div>
 </body>
+
 </html>
