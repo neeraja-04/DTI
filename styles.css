@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    margin-top: 2rem;
+}
+.titlebox{
+    height:7rem;
+    /* margin-bottom: 10px; */
+    position: sticky;
+}
+.title
+{
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: xx-large;
+    color: brown;
+    animation: mymove 0.5s infinite;
+    display: inline;
+    margin-top: 2rem;
+}
+@keyframes mymove {
+    0% {
+        opacity:100%;
+        font-size: 30px;
+        height: 300px;
+        width:auto;
+
+    }
+    50% {
+        opacity:50%;
+        font-size: 32px;
+        margin-bottom: 0;
+        height: 300px;
+        width:auto;
+    }
+
+    100% {
+        opacity:100%;
+        font-size: 30px;
+        height: 300px;
+        width:auto;
+    }
+  }

@@ -36,7 +36,12 @@ img{
     margin-bottom: 2%;
 }
 .details{
+    background-color:gainsboro;
     display: block;
+    border-radius: 10px;
+    border-color:  darkmagenta;
+    border-width: 2px;
+    box-shadow: 5px 8px 8px #555;
     margin-bottom: 2%;
 }
 label{
@@ -87,6 +92,7 @@ label{
 }
 .box
 {
+    background-color:beige;
     border-radius: 10px;
     border-color: #0C134F;
     border-style: groove;
